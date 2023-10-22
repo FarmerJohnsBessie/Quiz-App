@@ -1,5 +1,3 @@
-import {useState} from "react";
-
 function SubmissionForm({handleSubmit, isMultipleChoice, choices, handleChange, disable}){
 
 
