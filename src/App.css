@@ -1,38 +1,106 @@
-.App {
+:root {
+  --bodytext-1-font-family: "KoHo-Regular", Helvetica;
+  --bodytext-1-font-size: 24px;
+  --bodytext-1-font-style: normal;
+  --bodytext-1-font-weight: 400;
+  --bodytext-1-letter-spacing: 0px;
+  --bodytext-1-line-height: normal;
+  --nav-element-font-font-family: "Lexend-Regular", Helvetica;
+  --nav-element-font-font-size: 20px;
+  --nav-element-font-font-style: normal;
+  --nav-element-font-font-weight: 400;
+  --nav-element-font-letter-spacing: 0px;
+  --nav-element-font-line-height: normal;
+  --nav-text-font-family: "Koulen-Regular", Helvetica;
+  --nav-text-font-size: 20px;
+  --nav-text-font-style: normal;
+  --nav-text-font-weight: 400;
+  --nav-text-letter-spacing: 0px;
+  --nav-text-line-height: normal;
+  --subtext-font-family: "Koulen-Regular", Helvetica;
+  --subtext-font-size: 36px;
+  --subtext-font-style: normal;
+  --subtext-font-weight: 400;
+  --subtext-letter-spacing: 0px;
+  --subtext-line-height: normal;
+  --title-font-family: "Koulen-Regular", Helvetica;
+  --title-font-size: 100px;
+  --title-font-style: normal;
+  --title-font-weight: 400;
+  --title-letter-spacing: 0px;
+  --title-line-height: normal;
+  --variable-collection-blue: rgba(37, 99, 235, 1);
+  --variable-collection-dark-gray: rgba(22, 22, 22, 0.8);
+  --variable-collection-green-1: rgba(97, 173, 0, 1);
+  --variable-collection-light-gray: rgba(243, 244, 246, 1);
+  --variable-collection-red: rgba(255, 0, 0, 1);
+  --variable-collection-red-2: rgba(255, 82, 82, 1);
+  --variable-collection-white: rgba(255, 255, 255, 1);
+}
+
+.app{
+  background-color: var(--variable-collection-light-gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.title{
+  color: #000000;
+  font-family: "Koulen", Helvetica;
+  font-size: 50px;
+  /*font-weight: 400;*/
+  /*letter-spacing: 0;*/
+  /*line-height: normal;*/
+  position: relative;
+  left: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title h1{
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+.quiz{
+  background-color: var(--variable-collection-white);
+  box-shadow: 0px 4px 4px #00000040;
+  height: 600px;
+  position: relative;
+  width: 1200px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-field{
+  position: absolute;
+  bottom: 15px;
+  background-color: #eaeaea;
+  height: 50px;
+  width: 1140px;
+  left: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  height: 50px;
+  background-color: var(--variable-collection-red-2);
+  width: 100%;
+  position: relative;
+  right: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.header .question-number{
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-left: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .score{
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 30px;
 }
